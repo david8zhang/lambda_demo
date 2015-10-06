@@ -1,0 +1,9 @@
+class AbstractExample{
+	public static void callFoo(Abstraction widget){
+		widget.foo();
+	}
+	
+	public static void main(String[] args){
+		
+	}
+}

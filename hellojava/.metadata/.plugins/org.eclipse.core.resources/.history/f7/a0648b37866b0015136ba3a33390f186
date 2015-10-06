@@ -1,0 +1,5 @@
+class Bar{
+	void foo(){
+		System.out.println("Berkeley!")
+	}
+}

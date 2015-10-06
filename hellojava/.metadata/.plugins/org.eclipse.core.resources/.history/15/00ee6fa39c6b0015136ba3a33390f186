@@ -1,0 +1,5 @@
+class Stack{
+	public static void change1(int[] i){
+		
+	}
+}

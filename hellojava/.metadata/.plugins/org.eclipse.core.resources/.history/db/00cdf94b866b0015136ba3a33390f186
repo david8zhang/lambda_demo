@@ -1,0 +1,5 @@
+class AbstractExample{
+	public static void callFoo(Abstraction widget){
+		
+	}
+}

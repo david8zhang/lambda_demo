@@ -1,0 +1,20 @@
+package Skeletons;
+
+public class Monster{
+	protected String noise = "blargh";
+	
+	public Monster() {
+		System.out.println("I don't exist");
+	}
+	
+	public static void mash(Monster m) {
+		System.out.print("Monster: ");
+		m.spook();
+	}
+	
+	public void spook() {
+		System.out.println("I go " + noise);
+	}
+	
+	public static void main
+}

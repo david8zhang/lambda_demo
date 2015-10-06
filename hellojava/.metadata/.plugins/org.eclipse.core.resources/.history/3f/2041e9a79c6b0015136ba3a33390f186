@@ -1,0 +1,6 @@
+class Stack{
+	public static void change1(int[] i){
+		change2(i);
+		i[0] = i[0] + 100;
+	}
+}

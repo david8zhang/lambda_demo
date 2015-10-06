@@ -1,0 +1,21 @@
+class Ghoul extends Monster{
+	public Ghoul() {
+		System.out.println("3 spooky 5 you");
+		noise = swoosh; 
+	}
+	
+	public static void mash(Monster m){
+		System.out.println("boogity boo");
+		m.mash(m);
+		spook();
+	}
+	
+	public void spook(){
+		System.out.println("I'm so ghoul: " + noise);
+	}
+	
+	public void haunt() {
+		System.out.println("eEeeEerrrRrRrrrr");
+		mash(this);
+	}
+}

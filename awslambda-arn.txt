@@ -1,1 +1,2 @@
-arn:aws:iam::212062460220:role/executionrole
+role arn -> arn:aws:iam::212062460220:role/executionrole
+fn arn -> arn:aws:lambda:us-west-2:212062460220:function:CreateThumbnail

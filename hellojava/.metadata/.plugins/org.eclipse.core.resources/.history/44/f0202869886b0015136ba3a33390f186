@@ -1,0 +1,11 @@
+public class Monster{
+	protected String noise = "blargh";
+	
+	public Monster(){
+		System.out.println("I don't exist");
+	}
+	
+	public static void mash(Monster m){
+		
+	}
+}

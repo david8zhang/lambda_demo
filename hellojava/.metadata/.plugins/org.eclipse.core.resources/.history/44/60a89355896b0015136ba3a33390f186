@@ -1,0 +1,44 @@
+package Skeletons;
+
+public class Monster{
+	protected String noise = "blargh";
+	
+	public Monster() {
+		System.out.println("I don't exist");
+	}
+	
+	public static void mash(Monster m) {
+		System.out.print("Monster: ");
+		m.spook();
+	}
+	
+	public void spook() {
+		System.out.println("I go " + noise);
+	}
+	
+	public static void main (String[] args){
+		System.out.print("Line 1: ");
+		Monster thing = new Monster();
+		System.out.print("Line 2: ");
+		Ghoul ghastly = new Ghoul();
+		System.out.println("Line 3: ");
+		thing.mash(ghastly);
+		System.out.println("Line 4: ");
+		ghastly.mash(thing);
+		
+		System.out.println("Line 5: ");
+		ghastly.spook();
+		System.out.println("Line 6: ");
+		thing.spook();
+		
+		System.out.println("Line 7: ");
+		thing = ghastly;
+//		ghastly = thing; Type mismatch, can't define a ghoul as a monster
+		
+		System.out.println("Line 8: ");
+		ghastly = (Ghoul) thing;
+		ghastly.haunt();
+//		thing.haunt(); no method haunt in static type Monster
+		thing.mash(ghastly);
+	}
+}
